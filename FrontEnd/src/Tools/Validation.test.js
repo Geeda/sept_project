@@ -27,7 +27,7 @@ import { validateFormData } from './Validation';
 //       }).toThrow()
 //   })
 
-test("should be true", () => {
+test("should be ALWAYS true", () => {
   const a = "test"
   expect("test").toEqual(a)
 })
