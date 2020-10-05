@@ -1,6 +1,6 @@
 # RMIT SEPT 2020 Major project
 
-# Group 7-tues-14-30-4
+## Group 7-tues-14-30-4
 
 ## Members
 * GUIDA, William (s3707064)
