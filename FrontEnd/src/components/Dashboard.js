@@ -17,19 +17,21 @@ class Dashboard extends Component {
         };
     }
 
-    componentDidMount() {
-        const string =  "http://localhost:8080/api/user/id/" + localStorage.getItem("LoggedUser").toUpperCase() + "/"
+componentDidMount() {
+        if (localStorage.getItem("LoggedUser")){
+            const string =  "http://localhost:8080/api/user/id/" + localStorage.getItem("LoggedUser").toUpperCase() + "/"
 
-        console.log(string)
+            console.log(string)
 
-        axios.get(string).then(res => {
-            const loggedUser = res.data;
-            this.setState({ loggedUser });
+            axios.get(string).then(res => {
+                const loggedUser = res.data;
+                this.setState({ loggedUser });
 
-            console.log(loggedUser)
-        })
+                console.log(loggedUser)
+            })
 
-        console.log(this.state.loggedUser)
+            console.log(this.state.loggedUser)
+        }
     }
 
 
