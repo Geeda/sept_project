@@ -126,5 +126,5 @@ class AddUser extends Component {
         )
     }
 }
-export default withRouter(AddUser);
-// export default AddUser;
+// export default withRouter(AddUser);
+export default AddUser;
