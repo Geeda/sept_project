@@ -11,7 +11,7 @@ jobs:
 
     environment:
       ECR_REPOSITORY_NAME: septproject
-      FULL_IMAGE_NAME_BACKEND: 283020234609.dkr.ecr.us-east-1.amazonaws.com/septprojectfrontend:latest
+      FULL_IMAGE_NAME_BACKEND: 283020234609.dkr.ecr.us-east-1.amazonaws.com/septproject:latest
     steps:
       - checkout
       - setup_remote_docker
@@ -78,7 +78,7 @@ jobs:
 
     environment:
       ECR_REPOSITORY_NAME: septprojectfrontend
-      FULL_IMAGE_NAME_FRONTEND: 283020234609.dkr.ecr.us-east-1.amazonaws.com/septproject:latest
+      FULL_IMAGE_NAME_FRONTEND: 283020234609.dkr.ecr.us-east-1.amazonaws.com/septprojectfrontend:latest
     steps:
       - checkout
       - run: (cd FrontEnd && yarn install)
